@@ -1,0 +1,7 @@
+{{>header}}
+
+<ul>
+{{#disciplinas}}
+<li><strong>Nome da matéria: {{nome}} - Dia da semana: {{dia}} - Horário: {{horario}}</li>
+<br>
+{{/disciplinas}}
