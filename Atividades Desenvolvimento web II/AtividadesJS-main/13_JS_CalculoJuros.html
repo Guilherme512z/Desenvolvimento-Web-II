@@ -1,0 +1,44 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE html html PUBLIC "-//W3C//DTD XHML 1.0 stric//BR" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- JS_RepetiçãoFor.html --> 
+
+
+<html xmln="https://www.w3.org/1999/xhtml">
+    <head>
+            <title> Calculo de Juros Composto Inteiro </title>
+            <style type = "text/css">
+                table {width: 100%}
+                th {text-align: left}
+            </style>
+            <script type="text/javascript">
+                <!--
+                    var total;
+                    var principal = 1000.00;
+                    var taxaJuros = .05;
+            
+                 document.writeln(
+                    "<table border=\"1\">");
+                        document.writeln(
+                    "<caption>Calculo do juros composto</caption>");
+                        document.writeln(
+                    "<thead><tr><th>Ano</th>");
+                        document.writeln(
+                    "<th>Total</th>");
+                    document.writeln("</th></thead><tbody>");
+                 
+
+                        for (var ano = 1; ano <=10; ++ano){
+                            total = principal * Math.pow(1.0 + taxaJuros, ano);
+                            document.writeln(" <tr><td>" + ano +
+                                "</td><td>" + total.toFixed(2) +
+                                    "</td></tr>");
+                        }
+                        document.writeln ("</tbody></table>");
+                    -->
+            </script>
+    </head>
+    <body>
+        <p> <hr /> Click Refresh (ou reload ) para executar este script agora.</p>
+    </body>
+</html>
